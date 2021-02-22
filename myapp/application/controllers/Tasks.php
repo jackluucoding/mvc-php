@@ -54,6 +54,7 @@ class Tasks extends CI_Controller
         $this->form_validation->set_rules('task_body', 'task Description', 'trim|required');
 
         if ($this->form_validation->run() == false) {
+            $data['the_task'] = $this->task_model->get_task_project_data($task_id);
             $data['main_view'] = 'tasks/edit_task';
             $this->load->view('layouts/main', $data);
         } else {
