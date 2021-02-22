@@ -1,1 +1,1 @@
-# mvc-php Jack Luu IT354
+# MVC-PHP Jack Luu IT354
